@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        /*We can use portrait also to show n potrait*/
+        @media only screen and (max-width:455px){
+            body{
+                background-color: aqua;
+            }
+        }
+        .boxes{
+            /* display: flex; */
+            flex-direction: column;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: aqua;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Hey I'm a div ok
+    </div>
+    <div class="box">
+        I'm a box
+
+    </div>
+</body>
+</html>

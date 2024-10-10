@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        .box{
+            width: 50vw;
+            height: 10vh;
+            border: 2px solid;
+            overflow: auto;
+            /* white-space: inherit; */
+            white-space: nowrap;
+            /*ellipsis/hidden/scroll brings dots at the end...*/
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I'm a boy and here is lorem 45 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque sit temporibus harum maxime veniam, suscipit placeat exercitationem, tempora beatae vero corporis iure nihil et facilis vitae recusandae eveniet eum nesciunt itaque qui nisi quis? Dicta dolores quisquam, atque explicabo tenetur facere illum veniam fugiat.
+    </div>
+</body>
+</html>

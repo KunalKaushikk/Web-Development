@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*
+         div{
+            background-color: aliceblue;
+        } 
+        Class selector
+        */
+
+        /* use class after . */
+        .red{
+            background-color: red;
+        }
+        .another{
+            color: rgb(97, 218, 176);
+            /* background-color: green; */
+        }
+        #id{
+            background-color: antiquewhite;
+        }
+        /* child selector */
+        div>p{
+            background-color: rgb(91, 41, 6);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* universal selector/ pesudo selector */
+        a:visited{
+            color: rgb(217, 228, 23);
+        }
+        a:link{
+            color: purple;
+        }
+        a:active{
+            background-color: black;
+        }
+        a:hover{
+            background-color: greenyellow;
+        }
+        p:first-child{
+            background-color: rgb(38, 112, 176);
+        }
+    </style>
+</head>
+<body>
+    <main id="one">
+        <p>this is 1st parent child</p>
+        <p>this is second parent child</p>
+    </main>
+    <div class="red">I'm a div of red color.
+        <p>
+            This is a para under div styled seperately by <br>"div>p"command.
+        </p>
+    </div>
+    <div class="another" id="id">I'm div of green color</div>
+    <div>
+        <a href="http://www.google.com">Go to google</a> <br>
+        <a id="jj" href="http://www.facebook.com">Go to facebook</a>
+    </div>
+</body>
+</html>

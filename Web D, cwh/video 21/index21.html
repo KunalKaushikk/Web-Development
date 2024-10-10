@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COLORS</title>
+    <style>
+        /* Let the specificity is 1 */
+        h1{
+            color: acqua;
+        }
+        .yellow{
+            color: red;
+        }
+        /*Specificity 10+1=11 so it'll apply */
+        h1.yellow{
+            color: green;
+        }
+        /* Let the specificity is 10
+        Most priority because overwrite all  */
+        .cpurple{
+            color: purple;
+        }
+        /* This is attribute selector, specf=10
+        class=10 and href=10 and :hover(pseudo class)=10*/
+    </style>
+</head>
+<body>
+     <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+     </div> 
+</body>
+</html>
