@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* id selector, kisi ek hi element select karna ho tab */
+        #specialpara{
+            color: purple;
+            border: 2px solid red ;
+        }
+        /* class selector */
+        .redElement{  
+            /*. is for class and # is for id */
+            color: red;
+        }
+        .bgblue{
+            background-color: rgb(71, 130, 181);
+        }
+        /* Element selector */
+        p{
+            color: brown;
+            border: 4px solid black;
+        }
+        /* Grouping selector */
+        footer, span{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        CSS Selectors   
+    </h3>
+    <p>
+        This is a simple paragraph to demonstrate css selectors
+    </p>
+    <p id="specialpara" class="redElement bgblue">
+        This is a special simple paragraph to demonstrate css selectors
+    </p>
+    <p>This is another paragraph for selectors</p>
+    <div>
+        <footer>This is footer</footer>
+    </div>
+    
+</body>
+</html>

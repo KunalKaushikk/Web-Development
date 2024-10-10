@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is form tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+        <input type="text" name=""myName id="name">
+    </div>
+ <!-- hr can be used for space with line  -->
+    <br>   
+ <div>
+        Reg No.:<input type="text">
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myEmail">
+    </div>
+    <br>
+    <div>
+        Date: <input type="date" name="myDate">
+    </div>
+    <br>
+    <div>
+        Bonus: <input type="number" name="MyBonus">
+        <!-- Also accept e for 10^x -->
+    </div>
+    <br>
+    <div>
+        Are you eligible? <input type="checkbox"checked value="myEligibility">
+    </div>
+    <br>
+    <div>
+        Gender: Male <input type="radio" name="Myname"> Female <input type="radio" name="Myname"> Other <input type="radio" name="Myname">
+    </div>
+    <br>
+    <div>
+        Write about yourself: <br><textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="Swift">Swift</option>
+            <option value="XUV"selected>XUV</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="submit" value="Reset Now">
+        
+    </div>
+    </form>
+</body>
+</html>
